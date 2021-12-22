@@ -454,8 +454,187 @@ header .slid-icon div {
 	margin-bottom: 100px;
 	position: relative;
 }
-.designe .des-pic {
+.designe .work-info {
 	position: absolute;
+	width: 50%;
+	min-height: 40%;
+	background-color: var(--adc-color);
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	border-radius: 15px 0 0 15px;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	-ms-border-radius: 15px 0 0 15px;
+	-o-border-radius: 15px 0 0 15px;
+	backdrop-filter: blur(5px);
+	padding: 40px 50px;
+}
+@media (max-width: 480px) {
+	.designe .work-info {
+		width: 100%;
+		min-height: 30%;
+	}
+}
+.designe .work-info h3 {
+	font-size: 1.2rem;
+	color: var(--main-color);
+	font-weight: var(--l-w);
+	margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+	.designe .work-info h3 {
+		font-size: 1rem;
+		text-align: center;
+	}
+}
+.designe .work-info ul li {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--main-color);
+	font-weight: var(--m-w);
+}
+@media (max-width: 480px) {
+	.designe .work-info ul li {
+		font-size: 0.9rem;
+		text-align: start;
+		line-height: 2.5;
+	}
+}
+/* start of portfolio */
+.portfolio .view-media {
+	width: 20%;
+	height: 45px;
+	line-height: 40px;
+	color: #222;
+	margin-inline: auto;
+	margin-bottom: 50px;
+}
+@media (max-width: 480px) {
+	.portfolio .view-media {
+		width: 80%;
+	}
+}
+.portfolio .view-media div {
+	cursor: pointer;
+	font-weight: var(--m-w);
+	font-size: 1rem;
+	padding: 2px 7px;
+	margin: auto;
+	transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+}
+.portfolio .view-media div:not(:first-of-type):hover {
+	color: #fff;
+	background-color: var(--add-color);
+}
+.portfolio .view-media div:first-of-type {
+	background-color: var(--add-color);
+	color: #fff;
+}
+.portfolio .gallery {
+	margin-inline: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 10px;
+}
+.portfolio .gallery .zoom-container {
+	height: 200px;
+	transition: transform 400ms;
+	-webkit-transition: transform 400ms;
+	-moz-transition: transform 400ms;
+	-ms-transition: transform 400ms;
+	-o-transition: transform 400ms;
+}
+.image-zoom {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.image-zoom:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0%;
+	background-color: var(--add-color);
 	bottom: 0;
-	left: 15%;
+	left: 0;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+}
+.image-zoom:before {
+	position: absolute;
+	color: var(--main-color);
+	left: 5%;
+	bottom: 15%;
+}
+.image-zoom:hover:after {
+	height: 30%;
+}
+.image-zoom:hover:before {
+	content: "Michal Danero";
+	z-index: 555;
+}
+.image-zoom .test {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: var(--add-color);
+}
+.image-zoom img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	-o-transition: 500ms;
+}
+.image-zoom img:hover {
+	transform: scale(2) rotate(20deg);
+	-webkit-transform: scale(2) rotate(20deg);
+	-moz-transform: scale(2) rotate(20deg);
+	-ms-transform: scale(2) rotate(20deg);
+	-o-transform: scale(2) rotate(20deg);
+}
+.more-gallery {
+	width: 80px;
+	height: 40px;
+	background-color: var(--main-color);
+	color: var(--add-color);
+	font-size: 1rem;
+	font-weight: var(--l-w);
+	border: 2px solid var(--add-color);
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	margin-inline: auto;
+	margin-block: 50px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.more-gallery:hover {
+	background-color: var(--add-color);
+	color: var(--main-color);
 }
