@@ -63,6 +63,8 @@ body {
 	font-size: 1rem;
 	font-weight: var(--m-w);
 	color: var(--sec-color);
+	max-width: 300px;
+	margin: auto;
 }
 .container {
 	padding-inline: 20px;
@@ -451,7 +453,6 @@ header .slid-icon div {
 	height: 90vh;
 	background-image: url(/img/design-features.jpg);
 	background-size: cover;
-	margin-bottom: 100px;
 	position: relative;
 }
 .designe .work-info {
