@@ -634,8 +634,70 @@ header .slid-icon div {
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	cursor: pointer;
 }
 .more-gallery:hover {
 	background-color: var(--add-color);
 	color: var(--main-color);
+}
+/* start of video section  */
+.back-image {
+	width: 100%;
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(/img/quote.jpg);
+	background-size: cover;
+	position: relative;
+	margin-bottom: 100px;
+	padding-block-start: 40px;
+	justify-content: center;
+	text-align: center;
+}
+.back-image h2 {
+	color: var(--main-color);
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+	.back-image h2 {
+		font-size: 1.2rem;
+	}
+}
+.back-image video {
+	width: 300px;
+	height: 250px;
+}
+@media (max-width: 480px) {
+	.back-image video {
+		width: 80%;
+		margin-inline: auto;
+		height: 250px;
+		margin-bottom: 25px;
+	}
+}
+.back-image div a {
+	width: 200px;
+	height: 40px;
+	background-color: var(--add-color);
+	color: var(--main-color);
+	font-size: 1rem;
+	font-weight: var(--l-w);
+	border: 2px solid var(--add-color);
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	margin-inline: auto;
+	margin-block-start: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	cursor: pointer;
+}
+.back-image div a:hover {
+	background-color: var(--line-color);
+	border: none;
 }
