@@ -648,7 +648,6 @@ header .slid-icon div {
 		url(/img/quote.jpg);
 	background-size: cover;
 	position: relative;
-	margin-bottom: 100px;
 	padding-block-start: 40px;
 	justify-content: center;
 	text-align: center;
@@ -700,4 +699,104 @@ header .slid-icon div {
 .back-image div a:hover {
 	background-color: var(--line-color);
 	border: none;
+}
+/* start of about us */
+.about {
+	width: 100%;
+	position: relative;
+}
+.about-img {
+	width: 500px;
+	height: 250px;
+	margin-inline: auto;
+	position: relative;
+	z-index: -1;
+}
+.about-img img {
+	width: 500px;
+	height: 250px;
+}
+@media (max-width: 480px) {
+	.about-img,
+	.about-img img {
+		width: 350px;
+		margin-inline: auto;
+	}
+}
+.about-bar {
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(/img/stats.png);
+	margin-top: -5%;
+	z-index: 99;
+	position: relative;
+	margin-bottom: 100px;
+}
+@media (max-width: 480px) {
+	.about-bar {
+		margin-top: -16%;
+		min-height: 450px;
+	}
+}
+.statics {
+	width: 60%;
+	height: 150px;
+	background-color: var(--adc-color);
+	backdrop-filter: blur(1px);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+	.statics {
+		gap: 0;
+		min-height: 350px;
+	}
+}
+.static-item {
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+}
+@media (max-width: 480px) {
+	.static-item {
+		padding: 30px;
+		gap: 25px;
+	}
+}
+.static-item span:first-of-type {
+	width: 35px;
+	height: 35px;
+	background-color: #222;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.static-item i {
+	position: absolute;
+	color: var(--main-color);
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+.static-item span:nth-child(2) {
+	color: var(--main-color);
+	font-weight: var(--l-w);
+}
+.static-item span:nth-child(3) {
+	color: var(--line-color);
+	font-size: 0.9rem;
+	font-weight: var(--l-w);
 }
